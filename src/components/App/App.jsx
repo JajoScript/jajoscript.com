@@ -16,20 +16,20 @@ import Footer from '../Footer/Footer';
 
 // Definición de componente.
 export default class App extends Component {
-   render() {
-      return (
-         <div className="">
-            <Banner></Banner>
-            <Header></Header>
-            <Nav></Nav>
-            <About></About>
-            <Experience></Experience>
-            <Services></Services>
-            <Portfolio></Portfolio>
-            <Testimonials></Testimonials>
-            <Contact></Contact>
-            <Footer></Footer>
-         </div>
-      );
-   }
+  render() {
+    return (
+      <div className="">
+        <Banner />
+        <Header />
+        <Nav />
+        <About />
+        <Experience />
+        <Services />
+        <Portfolio />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }
 }

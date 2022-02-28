@@ -1,8 +1,8 @@
 // Dependencias.
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 // Estilos.
-import './Footer.css'
+import './Footer.css';
 
 // Otros componentes.
 
@@ -10,9 +10,10 @@ import './Footer.css'
 export default class Footer extends Component {
   render() {
     return (
-      <footer>
-        <h1>footer</h1>
-      </footer>
-    )
+      <section style={{ height: '50vh' }}>
+        <h5>Footer</h5>
+        <h2>Próximamente ...</h2>
+      </section>
+    );
   }
 }
