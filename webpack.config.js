@@ -2,6 +2,7 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCSSExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 // Configuraciones.
 module.exports = {
@@ -64,10 +65,25 @@ module.exports = {
 
             // Assets.
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(svg|jpg|gif)$/,
                 loader: 'file-loader',
                 options: {
                     name: 'assets/images/[hash].[ext]',
+                }
+            },
+
+            // Compilación de assets .png.
+            {
+                test: /\.png$/,
+                type: 'asset/resource'
+            },
+
+            // Assets - PDF.
+            {   
+                test: /(\.pdf)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/files/[name].[ext]',
                 }
             }
         ]
@@ -75,12 +91,24 @@ module.exports = {
 
     // Configuración de plugins.
     plugins: [
+        // HTML plugin.
         new htmlWebpackPlugin({
             template: './public/index.html',
             filename: './index.html',
             favicon: './src/assets/icons/logo.svg',
         }),
-    
+        
+        // CSS PLUGIN.
         new miniCSSExtractPlugin(),
+
+        //  COPY PLUGIN.
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'src', 'assets/images'),
+                    to: 'assets/images',
+                },
+            ],
+        }),
     ]
 };

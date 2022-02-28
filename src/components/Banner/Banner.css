@@ -1,0 +1,26 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  gap: 1rem;
+
+  background-color: var(--color-bg-variant);
+  align-items: center;
+  justify-content: center;
+}
+
+.animate-work {
+  animation: animate-work 1s ease-in-out infinite;
+}
+
+@keyframes animate-work {
+  0% {
+    transform: rotate(0rem);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+}
