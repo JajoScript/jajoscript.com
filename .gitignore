@@ -2,6 +2,9 @@
 node_modules/
 jspm_packages/
 
+# Dependencias de storybook.
+.storybook
+
 # Variables de entorno.
 .env
 

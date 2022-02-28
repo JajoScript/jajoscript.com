@@ -69,6 +69,15 @@ module.exports = {
                 options: {
                     name: 'assets/images/[hash].[ext]',
                 }
+            },
+
+            // Assets - PDF.
+            {   
+                test: /(\.pdf)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/files/[name].[ext]',
+                }
             }
         ]
     },
