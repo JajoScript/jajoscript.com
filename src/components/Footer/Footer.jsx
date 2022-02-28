@@ -10,7 +10,7 @@ import './Footer.css';
 export default class Footer extends Component {
   render() {
     return (
-      <section style={{ height: '50vh' }}>
+      <section style={{ height: '40vh' }}>
         <h5>Footer</h5>
         <h2>Próximamente ...</h2>
       </section>
