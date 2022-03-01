@@ -23,7 +23,16 @@
 }
 
 .portfolio__item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 1.2rem 0 0rem;
+}
+
+.portfolio__contributions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .portfolio__item-btns {
