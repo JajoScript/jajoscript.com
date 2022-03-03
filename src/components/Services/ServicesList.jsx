@@ -4,8 +4,6 @@ import { BsCheckLg } from 'react-icons/bs';
 export default class ServicesList extends Component {
   constructor(props) {
     super(props);
-
-    console.log(this.props.services);
   }
 
   render() {

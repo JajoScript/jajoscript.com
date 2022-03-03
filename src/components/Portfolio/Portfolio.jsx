@@ -21,8 +21,9 @@ export default class Portfolio extends Component {
             urlImg="https://repository-images.githubusercontent.com/373730624/8a7649ce-8159-41e0-9175-dbe9135ec7d7"
             altImg="Discord-bot repositorio"
             urlRepository="https://github.com/JajoScript/Waton-BOT"
+            nameRepository="Waton-BOT"
             urlDemo="#demo"
-            demoDisabled={false}
+            demoDisabled={true}
           />
 
           <Proyect
@@ -30,8 +31,9 @@ export default class Portfolio extends Component {
             urlImg="https://repository-images.githubusercontent.com/397980297/6696fded-6be9-40aa-9791-1c79e1768089"
             altImg="Reversi-game repositorio"
             urlRepository="https://github.com/JajoScript/IA-Reversi"
+            nameRepository="IA-Reversi"
             urlDemo="#demo"
-            demoDisabled={false}
+            demoDisabled={true}
           />
         </div>
       </section>
