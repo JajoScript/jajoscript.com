@@ -14,7 +14,7 @@ export default class Proyect extends Component {
     this.state = {};
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.getDataRepo();
   }
 

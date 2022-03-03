@@ -19,7 +19,6 @@ export default class Testimonial extends Component {
       .then((res) => res.json())
       .then((client) => {
         let data = client.results[0];
-        console.log(data);
 
         let imgSrc = data.picture.large;
         let phone = data.cell;

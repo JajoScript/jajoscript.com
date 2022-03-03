@@ -15,34 +15,36 @@ import Testimonial from './Testimonial';
 export default class Testimonials extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      reviews: [
+        {
+          desc: 'Le pedí una página hace 4 meses, me entrego un completo sin mayo. Increíble servicio.',
+          stars: 5,
+        },
+        {
+          desc: 'La página nunca funciono, pero buen cabro.',
+          stars: 4,
+        },
+        {
+          desc: 'Le pedí una página, quedo como el culo.',
+          stars: 3,
+        },
+        {
+          desc: 'Le pagué 2 palos, sigo esperando la página.',
+          stars: 2,
+        },
+        {
+          desc: 'Espere 2 años. Me hizo una página con WIX.',
+          stars: 1,
+        },
+      ],
+    };
   }
 
   getReview = () => {
-    let reviews = [
-      {
-        desc: 'Le pedí una página hace 4 meses, me entrego un completo sin mayo. Increíble servicio.',
-        stars: 5,
-      },
-      {
-        desc: 'La página nunca funciono, pero buen cabro.',
-        stars: 4,
-      },
-      {
-        desc: 'Le pedí una página, quedo como el culo.',
-        stars: 3,
-      },
-      {
-        desc: 'Le pagué 2 palos, sigo esperando la página.',
-        stars: 2,
-      },
-      {
-        desc: 'Espere 2 años. Me hizo una página con WIX.',
-        stars: 1,
-      },
-    ];
-
-    let review = reviews[Math.floor(Math.random() * reviews.length)];
-
+    let review =
+      this.state.reviews[Math.floor(Math.random() * this.state.reviews.length)];
     return review;
   };
 
