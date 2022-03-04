@@ -1,0 +1,12 @@
+{
+  "index.css": "auto/index.css",
+  "index.js": "auto/index.bundle.js",
+  "shared.js": "auto/shared.bundle.js",
+  "801.bundle.js": "auto/801.bundle.js",
+  "assets/images/jajoscript-photo.png": "auto/assets/images/f4053513547057ee7905fd73d2749fb8.png",
+  "assets/images/jajoscript-photo-2.png": "auto/assets/images/c322f30352320704dd6bc5068017e436.png",
+  "assets/files/CV.pdf": "auto/assets/files/CV.pdf",
+  "logo.svg": "auto/logo.svg",
+  "./index.html": "auto/./index.html",
+  "manifest.json": "auto/64e41cdb8ef43b56326e.json"
+}
