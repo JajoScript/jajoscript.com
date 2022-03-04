@@ -1,6 +1,7 @@
 // Dependencias.
 import { AiFillStar } from 'react-icons/ai';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 // Definición del componente.
 export default class Testimonial extends Component {
@@ -15,7 +16,9 @@ export default class Testimonial extends Component {
   }
 
   getClienteData = () => {
-    fetch('https://randomuser.me/api/')
+    fetch('https://randomuser.me/api/', {
+      'Set-Cookie': '_ga;SameSite=Strict; Secure',
+    })
       .then((res) => res.json())
       .then((client) => {
         let data = client.results[0];
@@ -59,6 +62,15 @@ export default class Testimonial extends Component {
   }
 }
 
-/* {new Array(this.props.stars).map((e, index) => {
-            return <AiFillStar key={`star-${index}`} />;
-          })} */
+// Props types.
+Testimonial.propTypes = {
+  review: PropTypes.objectOf(PropTypes.any),
+};
+
+// Props defaults.
+Testimonial.defaultProps = {
+  review: {
+    desc: 'Sin comentarios',
+    stars: 1,
+  },
+};

@@ -69,6 +69,9 @@ export default class Testimonials extends Component {
           <SwiperSlide>
             <Testimonial review={this.getReview()} />
           </SwiperSlide>
+          <SwiperSlide>
+            <Testimonial />
+          </SwiperSlide>
         </Swiper>
       </section>
     );

@@ -1,6 +1,5 @@
 // Dependencias.
 import React, { Component } from 'react';
-import { FaAward } from 'react-icons/fa';
 
 // Estilos.
 import './About.css';

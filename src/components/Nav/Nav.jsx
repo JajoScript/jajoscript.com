@@ -29,49 +29,49 @@ export default class Nav extends Component {
           onClick={() => this.changeActiveNav('#')}
           className={this.state.activeNav === '#' ? 'active' : ''}
         >
-          <AiOutlineHome />
+          <AiOutlineHome title="Icono de casa" />
         </a>
         <a
           href="#about"
           onClick={() => this.changeActiveNav('#about')}
           className={this.state.activeNav === '#about' ? 'active' : ''}
         >
-          <BiUserCircle />
+          <BiUserCircle title="Icono circular de usuario" />
         </a>
         <a
           href="#experience"
           onClick={() => this.changeActiveNav('#experience')}
           className={this.state.activeNav === '#experience' ? 'active' : ''}
         >
-          <BiBrain />
+          <BiBrain title="Icono de cerebro" />
         </a>
         <a
           href="#services"
           onClick={() => this.changeActiveNav('#services')}
           className={this.state.activeNav === '#services' ? 'active' : ''}
         >
-          <BiBookAlt />
+          <BiBookAlt title="Icono de libro" />
         </a>
         <a
           href="#portfolio"
           onClick={() => this.changeActiveNav('#portfolio')}
           className={this.state.activeNav === '#portfolio' ? 'active' : ''}
         >
-          <RiCustomerService2Fill />
+          <RiCustomerService2Fill title="Icono de audifonos" />
         </a>
         <a
           href="#testimonials"
           onClick={() => this.changeActiveNav('#testimonials')}
           className={this.state.activeNav === '#testimonials' ? 'active' : ''}
         >
-          <AiFillStar />
+          <AiFillStar title="Icono de estrella" />
         </a>
         <a
           href="#contact"
           onClick={() => this.changeActiveNav('#contact')}
           className={this.state.activeNav === '#contact' ? 'active' : ''}
         >
-          <FaUserCog />
+          <FaUserCog title="Icono de usuario" />
         </a>
       </nav>
     );

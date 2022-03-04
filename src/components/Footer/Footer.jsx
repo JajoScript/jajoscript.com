@@ -14,7 +14,7 @@ export default class Footer extends Component {
     return (
       <footer>
         <a href="#" className="footer__logo">
-          <HiFingerPrint /> Jajoscript
+          <HiFingerPrint title="Logo de la pagina" /> Jajoscript
         </a>
 
         <ul className="permalinks">
@@ -43,16 +43,16 @@ export default class Footer extends Component {
             href="https://www.linkedin.com/in/javier-almarza-bucarey/"
             target="_blank"
           >
-            <BsLinkedin />
+            <BsLinkedin title="Icono de Linkedin" />
           </a>
           <a href="https://github.com/JajoScript" target="_blank">
-            <BsGithub />
+            <BsGithub title="Icono de Github" />
           </a>
           <a href="https://www.instagram.com/jajoscript/" target="_blank">
-            <BsInstagram />
+            <BsInstagram title="Icono de Instagram" />
           </a>
           <a href="https://www.behance.net/javieralmarza" target="_blank">
-            <BsBehance />
+            <BsBehance title="Icono de Behance" />
           </a>
         </div>
 

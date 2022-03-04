@@ -16,14 +16,18 @@ export default class Card extends Component {
   render() {
     return (
       <article className="about__card">
-        {this.props.icon === 'award' ? <FaAward className="about__icon" /> : ''}
+        {this.props.icon === 'award' ? (
+          <FaAward className="about__icon" title="Icono de logro" />
+        ) : (
+          ''
+        )}
         {this.props.icon === 'client' ? (
-          <FaUserTie className="about__icon" />
+          <FaUserTie className="about__icon" title="Icono de usuario" />
         ) : (
           ''
         )}
         {this.props.icon === 'projects' ? (
-          <FaFolder className="about__icon" />
+          <FaFolder className="about__icon" title="Icono de carpeta" />
         ) : (
           ''
         )}

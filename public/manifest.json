@@ -1,0 +1,15 @@
+{
+  "author": "Javier Almarza",
+  "short_name": "Jajo",
+  "name": "Portafolio de Javier Almarza",
+  "icons": [
+    {
+      "src": "./src/assets/icons/logo.svg",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

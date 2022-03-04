@@ -2,6 +2,7 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const miniCSSExtractPlugin = require('mini-css-extract-plugin');
+const {WebpackManifestPlugin} = require('webpack-manifest-plugin');
 
 // Configuraciones.
 module.exports = {
@@ -21,9 +22,16 @@ module.exports = {
         filename: '[name].bundle.js',
     },
 
+    // Optimización.
     optimization: {
         splitChunks: {
             chunks: 'all',
+        },
+    },
+
+    performance: {
+        assetFilter: function (assetFilename) {
+            return assetFilename.endsWith('.js|jsx');
         },
     },
 
@@ -78,7 +86,8 @@ module.exports = {
                 options: {
                     name: 'assets/files/[name].[ext]',
                 }
-            }
+            },
+
         ]
     },
 
@@ -93,5 +102,10 @@ module.exports = {
         
         // CSS PLUGIN.
         new miniCSSExtractPlugin(),
+
+        // Manifest.json Plugin.
+        new WebpackManifestPlugin({
+            fileName: './public/manifest.json',
+        })
     ]
 };

@@ -13,7 +13,10 @@ export default class Details extends Component {
   render() {
     return (
       <article className="experience__details">
-        <BsPatchCheckFill className="experience__details-icon" />
+        <BsPatchCheckFill
+          className="experience__details-icon"
+          title="Icono de ticket"
+        />
         <div>
           <h4>{this.props.name}</h4>
           <small className="text-light">

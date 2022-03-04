@@ -1,6 +1,7 @@
 // Dependencias.
 import React, { Component } from 'react';
 import { BiGitBranch } from 'react-icons/bi';
+import PropTypes from 'prop-types';
 
 // Estilos.
 // Otros componentes.
@@ -51,7 +52,7 @@ export default class Proyect extends Component {
         <h3>{this.props.title}</h3>
 
         <div className="portfolio__contributions">
-          <BiGitBranch />
+          <BiGitBranch title="Icono de ramas de git" />
           <h5 className="text-light">Aportes: {this.state.contributions}</h5>
         </div>
 
@@ -72,3 +73,23 @@ export default class Proyect extends Component {
     );
   }
 }
+
+// PropTypes.
+Proyect.propTypes = {
+  title: PropTypes.string,
+  urlImg: PropTypes.string,
+  altImg: PropTypes.string,
+  urlRepository: PropTypes.string,
+  urlDemo: PropTypes.string,
+  demoDisabled: PropTypes.bool,
+};
+
+// PropTypes default.
+Proyect.defaultProps = {
+  title: '...',
+  urlImg: '#',
+  altImg: '#',
+  urlRepository: '#',
+  urlDemo: '#',
+  demoDisabled: false,
+};

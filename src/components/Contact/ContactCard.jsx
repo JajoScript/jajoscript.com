@@ -10,11 +10,26 @@ import { BsWhatsapp, BsInstagram } from 'react-icons/bs';
 export default class ContactCard extends Component {
   getSelection = (icon_name) => {
     if (icon_name == 'email') {
-      return <AiOutlineMail className="contact__option-icon" />;
+      return (
+        <AiOutlineMail
+          className="contact__option-icon"
+          title="Icono de correo"
+        />
+      );
     } else if (icon_name == 'wsp') {
-      return <BsWhatsapp className="contact__option-icon" />;
+      return (
+        <BsWhatsapp
+          className="contact__option-icon"
+          title="Icono de WhatsApp"
+        />
+      );
     } else if (icon_name == 'ig') {
-      return <BsInstagram className="contact__option-icon" />;
+      return (
+        <BsInstagram
+          className="contact__option-icon"
+          title="Icono de Instagram"
+        />
+      );
     }
   };
 
