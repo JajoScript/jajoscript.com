@@ -1,8 +1,8 @@
 // Dependencias.
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 // Estilos.
-import './Header.css'
+import './Header.css';
 
 // Otros componentes.
 import Interaction from './Interaction';
@@ -15,25 +15,25 @@ import Photo from '../../assets/images/jajoscript-photo.png';
 export default class Header extends Component {
   render() {
     return (
-      <header className='container header__container'>
-        <h5 className=''>Hola! soy</h5>  
-        <h1 className=''>Javier Almarza</h1>
-        <h5 className='text-light'>Fullstack developer</h5> 
-        
-        { /* Button */}
+      <header className="container header__container">
+        <p className="">Hola! soy</p>
+        <h1 className="">Javier Almarza</h1>
+        <p className="text-light">Fullstack developer</p>
+
+        {/* Button */}
         <Interaction></Interaction>
 
-        { /* Icon social media */}
+        {/* Icon social media */}
         <SocialMedia />
 
-        <div className='me'>
-          <img src={Photo} alt="jajoscript photo"/>
+        <div className="me">
+          <img src={Photo} alt="jajoscript photo" />
         </div>
 
-        <a href='#contact' className='scroll__down'>
-          <h4>Ir al contacto!</h4>
+        <a href="#contact" className="scroll__down">
+          <p>Ir al contacto!</p>
         </a>
       </header>
-    )
+    );
   }
 }

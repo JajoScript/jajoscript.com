@@ -51,7 +51,7 @@ export default class Testimonials extends Component {
   render() {
     return (
       <section id="testimonials">
-        <h5>Reseñas de los clientes</h5>
+        <p className="small_text text-light">Reseñas de los clientes</p>
         <h2>Testimonios</h2>
 
         <Swiper

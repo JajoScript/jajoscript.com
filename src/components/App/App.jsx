@@ -18,7 +18,7 @@ import Footer from '../Footer/Footer';
 export default class App extends Component {
   render() {
     return (
-      <div className="">
+      <div className="texture">
         <Banner />
         <Header />
         <Nav />

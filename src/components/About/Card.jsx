@@ -31,7 +31,7 @@ export default class Card extends Component {
         ) : (
           ''
         )}
-        <h5>{this.props.title}</h5>
+        <p className="about__card-title">{this.props.title}</p>
         <small>{this.props.subtitle}</small>
       </article>
     );

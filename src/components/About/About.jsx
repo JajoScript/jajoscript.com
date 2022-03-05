@@ -15,7 +15,7 @@ export default class About extends Component {
   render() {
     return (
       <section id="about">
-        <h5>Introducción</h5>
+        <p className="small_text text-light">Introducción</p>
         <h2>Acerca de mi</h2>
 
         <div className="container about__container">

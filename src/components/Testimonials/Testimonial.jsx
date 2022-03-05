@@ -48,7 +48,7 @@ export default class Testimonial extends Component {
         </div>
 
         <div className="client__info">
-          <h5 className="client__name">{this.state.clientName}</h5>
+          <p className="client__name">{this.state.clientName}</p>
           <small className="client__review">{this.props.review.desc}</small>
 
           <div className="client__stars">

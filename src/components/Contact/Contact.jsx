@@ -39,7 +39,7 @@ export default class Contact extends Component {
   render() {
     return (
       <section id="contact">
-        <h5>Ponte en contacto</h5>
+        <p className="small_text text-light">Ponte en contacto</p>
         <h2>Contactame</h2>
 
         <div className="container contact__container">

@@ -53,7 +53,7 @@ export default class Proyect extends Component {
 
         <div className="portfolio__contributions">
           <BiGitBranch title="Icono de ramas de git" />
-          <h5 className="text-light">Aportes: {this.state.contributions}</h5>
+          <p className="text-light">Aportes: {this.state.contributions}</p>
         </div>
 
         <div className="portfolio__item-btns">

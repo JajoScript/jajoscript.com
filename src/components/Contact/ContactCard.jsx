@@ -42,8 +42,8 @@ export default class ContactCard extends Component {
       >
         {this.getSelection(this.props.icon)}
 
-        <h4>{this.props.title}</h4>
-        <h5 className="text-light">{this.props.data}</h5>
+        <p>{this.props.title}</p>
+        <p className="text-light">{this.props.data}</p>
 
         <a href={this.props.redirect} target="_blank">
           {this.props.text}

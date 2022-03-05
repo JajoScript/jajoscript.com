@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
   render() {
     return (
       <section id="portfolio">
-        <h5>Mi trabajo reciente</h5>
+        <p className="small_text text-light">Mi trabajo reciente</p>
         <h2>Portafolio</h2>
 
         <div className="container portfolio__container">

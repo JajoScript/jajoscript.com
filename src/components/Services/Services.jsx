@@ -12,7 +12,7 @@ export default class Services extends Component {
   render() {
     return (
       <section id="services">
-        <h5>Lo que ofrezco</h5>
+        <p className="small_text text-light">Lo que ofrezco</p>
         <h2>Servicios</h2>
 
         <div className="container services__container">
