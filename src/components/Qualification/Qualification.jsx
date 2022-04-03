@@ -9,8 +9,8 @@ export default class Qualification extends Component {
   render() {
     return (
       <section id="Qualification">
-        <p>Mi trayectoria</p>
-        <h2>Capacitación</h2>
+        <p className="small_text text-light">Mi trayectoria</p>
+        <h2>Próximamente...</h2>
       </section>
     );
   }

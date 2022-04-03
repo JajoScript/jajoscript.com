@@ -7,6 +7,7 @@ import Nav from '../Nav/Nav';
 import Header from '../Header/Header';
 import Banner from '../Banner/Banner';
 import About from '../About/About';
+import Qualification from '../Qualification/Qualification';
 import Experience from '../Experience/Experience';
 import Services from '../Services/Services';
 import Portfolio from '../Portfolio/Portfolio';
@@ -23,6 +24,7 @@ export default class App extends Component {
         <Header />
         <Nav />
         <About />
+        <Qualification />
         <Experience />
         <Services />
         <Portfolio />
