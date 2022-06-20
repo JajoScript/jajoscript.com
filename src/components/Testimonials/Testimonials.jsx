@@ -52,9 +52,11 @@ export default class Testimonials extends Component {
     return (
       <section id="testimonials">
         <p className="small_text text-light">Reseñas de los clientes</p>
-        <h2>Testimonios</h2>
+        <h2>Próximamente...</h2>
 
-        <Swiper
+        {/* <h2>Testimonios</h2> */}
+
+        {/* <Swiper
           className="container testimonials__container"
           pagination={true}
           spaceBetween={40}
@@ -72,7 +74,7 @@ export default class Testimonials extends Component {
           <SwiperSlide>
             <Testimonial />
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
       </section>
     );
   }
